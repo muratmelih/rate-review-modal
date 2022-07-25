@@ -3,7 +3,11 @@ export interface RateType {
     title: string;
     value: number;
 }
-
+export interface RateReviewType{
+    rates:RateType[],
+    review:string,
+    tags:string[]
+}
 export const defaultRates: RateType[] = [
     {
         id:1,
