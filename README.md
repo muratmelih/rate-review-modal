@@ -4,7 +4,7 @@ This project is a simple rate and review modal developed with React and with Typ
 You can find live demo of the application in below link:
 
 
-[https://rate-review-modal.herokuapp.com/] Demo Link
+[https://rate-review-modal.herokuapp.com/] https://rate-review-modal.herokuapp.com/ Demo Link
 
 
 # Code Structure
