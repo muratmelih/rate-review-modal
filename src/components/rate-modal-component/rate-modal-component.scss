@@ -8,24 +8,32 @@
 
     .modal-body {
         background: white;
-        width: 700px;
-        height: 500px;
+        width: 50%;
+        max-width: 700px;
+        min-width: 300px;
+        height: auto;
+        max-height: 500px;
+        overflow-y: auto;
         margin: calc(50vh - 250px) auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
 
         .content {
-            width: 50%;
-            float: left;
+            width:50%;
+            min-width: 250px;
             text-align: left;
             padding: 15px;
             box-sizing: border-box;
 
             .logo {
                 text-align: center;
-                img{
+
+                img {
 
                     width: 70%;
                     height: auto;
-                    margin:70px auto;
+                    margin: 70px auto;
                 }
             }
 
@@ -44,26 +52,28 @@
 
 
             }
-            .rate-btn{
-                width:100%;
-                height:40px;
-                border:none;
-                border-radius:5px;
+
+            .rate-btn {
+                width: 100%;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
                 font-weight: bold;
                 font-size: 12px;
-                background:rgb(226,27,112);              
-                color:white;
+                background: rgb(226, 27, 112);
+                color: white;
             }
 
-            .rate-btn:disabled{  
-                background:rgb(202,202,202);
+            .rate-btn:disabled {
+                background: rgb(202, 202, 202);
             }
         }
 
         .close {
+            flex:none;
             width: 100%;
             text-align: right;
-            cursor:pointer;
+            cursor: pointer;
 
             img {
                 margin: 10px 10px 0 0;

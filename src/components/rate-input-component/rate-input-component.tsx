@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { RateType } from '../rate-modal-component/types';
-import './rate-component.scss';
+import './rate-input-component.scss';
 
-function RateComponent(props: any) {
+function RateInputComponent(props: any) {
     return (
         <div className="rate">
             <span className={`tooltiptext left-${props.data.value} ${Number(props.data.value) > 5 ? "success" : "fail"}`}>{props.data.value}</span>
@@ -13,4 +13,4 @@ function RateComponent(props: any) {
     );
 }
 
-export default RateComponent;
+export default RateInputComponent;
