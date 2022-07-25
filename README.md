@@ -1,6 +1,6 @@
 # Rate and Review Modal App
 
-This project is a simple rate and review modal developed with React and with TypeScript. For styling, sass is used
+This project is a simple rate and review modal developed with React and with TypeScript. For styling, sass is used, and application is full responsive
 You can find live demo of the application in below link:
 
 
@@ -20,7 +20,15 @@ After rating is done, review modal is opened
 ![image](https://user-images.githubusercontent.com/8982629/180784962-7c0121a2-2b43-4c37-b0ce-e416ecc4cad4.png)
 
 
-If user closes the modal without submitting, the modal reopens when page is reloaded, if user submits and refreshes page, modal will not be opened and data will be saved in local storage
+If user closes the modal without submitting, the modal reopens when page is reloaded, if user submits and refreshes page, modal will not be opened and data will be saved in local storage, but you can click the button on the page and local storage will be removed and modal will be opened
+
+![image](https://user-images.githubusercontent.com/8982629/180785325-cb24f30a-41d7-4443-8977-964ab86d39ee.png)
+
+# For Tests
+
+I added some unit tests for components and service methods
+![image](https://user-images.githubusercontent.com/8982629/180785404-a3c152d2-2bf4-41ef-b70e-e3920312f11f.png)
+
 
 ## Available Scripts
 
