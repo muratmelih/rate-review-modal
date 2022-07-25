@@ -5,6 +5,7 @@ You can find live demo of the application in below link:
 
 
 [https://rate-review-modal.herokuapp.com/] Demo Link
+!!!If demo link is broken, please refresh a couple times, Heroku may take time to build and run the applicaton.
 
 
 # Code Structure
