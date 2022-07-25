@@ -1,7 +1,8 @@
 # Rate and Review Modal App
 
-This project is a simple rate and review modal developed with React and with TypeScript. For styling, sass is used, and application is full responsive
+This project is a simple rate and review modal developed with React and with TypeScript.Application satisfies all the functional requirements. For styling, sass is used, and application is full responsive.
 You can find live demo of the application in below link:
+
 
 
 # Code Structure
