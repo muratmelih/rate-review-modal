@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <ModalComponent />
-      <button onClick={() => { localStorage.removeItem('rateReview'); window.location.reload(); }}>Dataları temizle ve modalı göster</button>
+      {
+        localStorage.getItem('rateReview') ?
+          <button onClick={() => { localStorage.removeItem('rateReview'); window.location.reload(); }}>Dataları temizle ve modalı göster</button>:
+          <button onClick={() => { window.location.reload(); }}>Yenile</button>
+      }
     </div>
   );
 }

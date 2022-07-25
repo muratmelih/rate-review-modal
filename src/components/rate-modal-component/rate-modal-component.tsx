@@ -3,10 +3,10 @@ import './rate-modal-component.scss';
 import close from '../../assets/images/close.png';
 import food from '../../assets/images/food.png';
 import logo from '../../assets/images/logo.png';
-import { defaultRates, RateStatusType, RateType } from './types';
+import { defaultRates, RateReviewType, RateStatusType, RateType } from './types';
 import ReviewComponent from '../review-component/review-component';
 import RateInputComponent from '../rate-input-component/rate-input-component';
-import { GetSavedData } from '../../services/rate-review-service';
+import { GetSavedData, SaveReviewAndRate } from '../../services/rate-review-service';
 
 function RateModalComponent() {
     const [rates, setRates] = useState<RateType[]>(defaultRates);
@@ -31,7 +31,7 @@ function RateModalComponent() {
     }
     const renderRateComponents = () => {
         return rates.map(rate => {
-            return <RateInputComponent data={rate} handleChange={handleRateChange} />
+            return <RateInputComponent key={rate.id} data={rate} handleChange={handleRateChange} />
         })
     }
 
@@ -39,8 +39,16 @@ function RateModalComponent() {
         setRateStatus(RateStatusType.Rate);
     }
 
+    const onReviewSubmit=(data:RateReviewType)=>{
+       const res = SaveReviewAndRate(data);
+       if(res){
+        alert('Rate and review saved successfuly');
+       }
+       setShowModal(false);
+    }
+
     const renderReviewContent = () => {
-        return <ReviewComponent rates={rates} onBack={() => { setRateStatus(RateStatusType.Rate) }} />;
+        return <ReviewComponent rates={rates} onSubmit={onReviewSubmit} onBack={() => { setRateStatus(RateStatusType.noRate) }} />;
     }
 
     const renderRateContent = () => {

@@ -1,6 +1,6 @@
 .rate {
     position: relative;
-    padding: 15px 5px;
+    padding:5px;
 
     .to input {
         width: 100%;
@@ -35,7 +35,7 @@
     input[type=range] {
         height: 38px;
         -webkit-appearance: none;
-        margin: 10px 0;
+        margin: 15px 0;
         width: 100%;
     }
 
@@ -121,7 +121,7 @@
 
         position: absolute;
         z-index: 1;
-        bottom: 70%;
+        bottom: 59%;
         left: 1px;
 
         opacity: 1;
@@ -162,6 +162,9 @@
         border-width: 5px;
         border-style: solid;
         border-color: rgb(0, 82, 45) transparent transparent transparent;
+    }
+    .title{
+        font-size:12px;
     }
 }
 

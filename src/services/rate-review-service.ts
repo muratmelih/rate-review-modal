@@ -10,6 +10,6 @@ export const SaveReviewAndRate = (data: RateReviewType): boolean => {
 }
 
 
-export const GetSavedData = (): string | null => {
-    return localStorage.getItem('rateReview');
+export const GetSavedData = (): string => {
+    return localStorage.getItem('rateReview') || '';
 }

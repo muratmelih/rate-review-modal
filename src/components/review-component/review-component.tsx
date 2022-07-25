@@ -14,12 +14,11 @@ function ReviewComponent(props: any) {
         return avg;
     }
     const renderHeader = () => {
-
-
         if (findAvg() < 5)
             return 'Is there something wrong with your order?'
         return 'Would you like to share your satisfaction ?'
     }
+
     const selectTag = (tag: string) => {
         let found = selectedTags.findIndex(a => a === tag);
         if (found > -1) {
@@ -30,6 +29,7 @@ function ReviewComponent(props: any) {
             setSelectedTags([...selectedTags, tag]);
         }
     }
+
     const renderTags = () => {
         return <div className='tag-wrapper' >
             {
@@ -40,12 +40,16 @@ function ReviewComponent(props: any) {
         </div>
     }
     const SaveRateReview = () => {
+        if(findAvg() === 1 && review.length < 4){
+            alert('Your reviews are 1, you should at least enter 3 characters of review');
+            return;
+        }
         const saveData: RateReviewType = {
             rates: props.rates,
             tags: selectedTags,
             review: review
         }
-        SaveReviewAndRate(saveData);
+        props.onSubmit(saveData);
     }
 
     return (
@@ -54,7 +58,6 @@ function ReviewComponent(props: any) {
                 renderHeader()
             }
             {
-
                 renderTags()
             }
             <fieldset>
