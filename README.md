@@ -6,8 +6,9 @@ You can find live demo of the application in below link:
 
 # Code Structure
 
-Application consists of 3 components,
 ![image](https://user-images.githubusercontent.com/8982629/180784614-53f23476-7538-4f5b-9a11-87b5a8d5a408.png)
+
+Application consists of 3 components,
 -Rate modal component
 -Rate input component 
 -Review component
