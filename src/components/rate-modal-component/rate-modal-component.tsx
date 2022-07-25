@@ -44,6 +44,7 @@ function RateModalComponent() {
        if(res){
         alert('Rate and review saved successfuly');
        }
+       setShowModal(false);
     }
 
     const renderReviewContent = () => {
