@@ -31,7 +31,7 @@ If user closes the modal without submitting, the modal reopens when page is relo
 
 # For Tests
 
-I added some unit tests for components and service methods
+Used jest for unit testing. I added some unit tests for components and service methods
 ![image](https://user-images.githubusercontent.com/8982629/180785404-a3c152d2-2bf4-41ef-b70e-e3920312f11f.png)
 
 
